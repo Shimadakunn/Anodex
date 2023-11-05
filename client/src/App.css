@@ -1,0 +1,111 @@
+body {
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto; /* Centrer verticalement les éléments */
+  background-size: contain; /* Ajuster la taille de l'image */
+  animation: slide 15s linear infinite;
+  animation-timing-function: linear; /* Utiliser 'linear' pour un défilement uniforme */
+}
+
+@keyframes slide {
+  from { background-position: 1700px 0; } /* Ajouter 'px' pour spécifier les pixels */
+  to { background-position: -1700px 0; } /* Ajouter 'px' pour spécifier les pixels */
+}
+
+
+
+.App-title {
+  margin-top: 190px;
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.enclosure {
+  border: 2px solid #fff;
+  padding: 30px; /* Augmentation de l'espace intérieur de l'encadré */
+  max-width: 80%; /* Augmentation de la largeur de l'encadré */
+  width: 80%;
+  text-align: center;
+  margin-top: 50px; /* Espace supplémentaire en haut */
+  word-break: break-all; /* Casser les mots pour qu'ils ne dépassent pas de l'encadré */
+  display: flex; /* Utiliser flexbox pour centrer le contenu de l'encadré */
+  flex-direction: column; /* Centrer le bouton et la réponse dans une colonne */
+  align-items: center; /* Centrer le contenu de l'encadré horizontalement */
+}
+
+button {
+  background-color: #9370DB; /* Couleur du bouton */
+  color: #fff; /* Couleur du texte du bouton */
+  padding: 15px 30px; /* Ajustement du padding pour centrer le texte */
+  border: none;
+  cursor: pointer;
+  margin: 10px auto 20px; /* Centrer le bouton horizontalement et ajouter de l'espace en bas */
+  font-size: 18px; /* Augmentation de la taille du texte du bouton */
+  border-radius: 5px;
+  height:4vh;
+  width:10vw;
+  transition: opacity 0.3s ease; /* Transition d'opacité pour l'effet de désactivation */
+  white-space: nowrap; /* Empêcher le texte de se diviser en plusieurs lignes */
+  display: flex; /* Utiliser flexbox pour centrer le texte du bouton */
+  justify-content: center; /* Centrer horizontalement le texte du bouton */
+  align-items: center; /* Centrer verticalement le texte du bouton */
+  margin-bottom: 10px; /* Ajouter une marge en bas du bouton */
+}
+
+button.disabled {
+  opacity: 0.6; /* Opacité réduite pour les boutons désactivés */
+  pointer-events: none; /* Désactiver les événements de souris pour les boutons désactivés */
+}
+
+p {
+  margin: 20px 0; /* Ajouter de l'espace en haut et en bas pour la réponse */
+  font-size: 16px;
+}
+
+h2 {
+  margin-top: 5px; /* Supprimer la marge en haut pour le titre */
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px 15px; /* Ajustement du padding pour centrer le texte */
+  font-size: 16px; /* Taille de la police */
+  border: 1px solid #fff; /* Bordure avec couleur blanche */
+  border-radius: 5px; /* Bordures arrondies */
+  color: #fff; /* Couleur du texte */
+  background-color: transparent; /* Fond transparent */
+  outline: none; /* Supprimer l'outline au focus */
+  margin-bottom: 10px; /* Ajouter de l'espace en bas de l'input */
+  width: auto; /* Largeur de l'input pour occuper tout l'espace disponible */
+}
+
+footer {
+  margin-bottom: 100px;
+}
+
+.info-list {
+  background-color: #f0f0f0; /* Couleur de fond du composant */
+  color: #333; /* Couleur du texte */
+  font-family: 'Courier New', monospace; /* Police de type machine à écrire */
+  padding: 20px; /* Espacement intérieur pour le contenu du composant */
+  border: 2px solid #ccc; /* Bordure du composant */
+  border-radius: 5px; /* Coins arrondis de la bordure */
+  width: auto;
+}
+
+.info-list ul {
+  list-style-type: none; /* Supprimer les puces de la liste */
+  padding: 0;
+  margin: 0;
+}
+
+.info-list li {
+  margin-bottom: 10px; /* Espacement entre les éléments de la liste */
+  font-size: 16px; /* Taille de la police des éléments de la liste */
+}
