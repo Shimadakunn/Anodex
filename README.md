@@ -38,6 +38,8 @@ To swap, open [http://localhost:3001/swap](http://localhost:3001/swap). If the s
 ## BOS
 The ***Anodex.jsx*** is the swap part of the app hosted on NEAR and decentralizes all the process of the swap.
 It calls both server api that you setup earlier in server/server.js
+This is the link of our Decentralized DEX component using BOS: [AnoDex](https://near.org/d46f94a8c5c545b43681c90edee1093fe2480484d708195bd465243a60e28002/widget/NestedProps)
 
+## Demo
 https://github.com/Shimadakunn/Anodex/assets/89693356/0f0a9c9e-be7d-40c9-8ba8-76e43250ba6e
 
